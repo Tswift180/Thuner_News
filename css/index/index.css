@@ -1,0 +1,97 @@
+html 
+{
+  position: relative;
+  min-height: 100%;
+}
+body 
+{
+  /* Margin bottom by footer height */
+  margin-bottom: auto;
+}
+.nav_logo_a
+{
+	float: left;
+    margin: 10px 5px;
+}
+#nav_logo
+{
+	width: 35px;
+	height: 35px;
+}
+#font_logo
+{
+	width: 150px;
+	height: 35px;
+}
+#nav_btn
+{
+	width: 40px;
+	height: 35px;
+	margin-right: 10px;	
+}
+.footer 
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background-color: #333333;
+  /*vertical-align: middle;*/
+  text-align: center;
+
+}
+.footer p
+{
+	color: white;
+	list-style: none;
+	
+}
+#con
+{
+	border: 1px solid black;
+	width: 100%;
+	height: auto;
+}
+#page
+{
+	border: 1px solid blue;
+	width: 100%;
+	height: auto;
+}
+#main_page
+{
+	/*position: fixed;
+	top: 70px;*/
+	padding-top: 65px;
+	padding-bottom: 100px;
+	float: none;
+	margin: 0 auto;
+	text-align: left;
+	
+}
+.newslist
+{
+	border: 1px solid #E6E6E6;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+}
+.newslist ul li
+{
+	border-bottom: 2px solid #E6E6E6;
+	padding-bottom: 3px;
+	
+}
+.newslist ul li:hover
+{
+  background-color:#337ab7;	
+}
+.media-object
+{
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	/*border: 1px solid #E8E8E8;*/
+}
+
