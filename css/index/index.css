@@ -11,7 +11,7 @@ body
 .nav_logo_a
 {
 	float: left;
-    margin: 10px 5px;
+  margin: 8px 5px;
 }
 #nav_logo
 {
@@ -76,6 +76,7 @@ body
 	padding-top: 10px;
 	padding-bottom: 3px;
 	border-radius: 5px;
+	float: right;
 }
 .newslist ul li
 {
@@ -93,5 +94,69 @@ body
 	width: 64px;
 	height: 64px;
 	/*border: 1px solid #E8E8E8;*/
+}
+.list-group
+{
+	text-align: center;
+	position: fixed;
+}
+.media-list
+{
+	display: none;
+}
+.glyphicon-chevron-up
+{
+	background-color: #E0E0E0;
+	
+}
+.navbar-btn
+{
+	float: right;
+	border: none;
+}
+.navbar-btn button
+{
+	width: 24px;
+	height: 24px;
+}
+.navbar-btn img
+{
+	display: inline-block;
+	margin: 8px auto;
+	width: 24px;
+	height: 24px;
+}
+.navbar-header
+{
+	display: inline-block;
+}
+
+/*模态框*/
+
+.userdata ul
+{
+	list-style-type: none;
+	margin: 0 auto;
+	width: 100%;
+}
+.userdata ul li
+{
+	display: inline-block;
+	width: 100%;
+}
+#first_ul
+{
+	text-align: left;
+}
+#page_header
+{
+	text-align: center;
+}
+.modal-header a img
+{
+	display: inline;
+	width: 18px;
+	height: 18px;
+	margin: 0 5px;
 }
 

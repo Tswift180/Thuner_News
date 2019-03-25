@@ -16,9 +16,11 @@ $(document).ready(function(){
     menu.blur(function()
     {
     	$(this).css('background-color','#FFFFFF');
-    })
+    });
     
     
+    
+     
     $.ajax({
 		type:"post",
 		url:"https://www.apiopen.top/journalismApi",
@@ -43,11 +45,13 @@ $(document).ready(function(){
 				    		    for(var i=0;i<info3.picInfo.length;i++)
 				    		    {
 				    		    	picInfo=info3.picInfo[i].url;
+				    		    
 				    		    }
 				    		    
 				    		    if(title!=null || digest!=null)
 				    		    {
-				    		    	list.append("<li class='media'><div class='media-left'><a href='#'><img class='media-object' src='"+picInfo+"' alt='aaa'></a></div><div class='media-body'><h4 class='media-heading'>"+title+"</h4>"+digest+"</div></li>");				    		        		    		    	
+				    		    	list.append("<li class='media'><div class='media-left'><a href='#'><img class='media-object' src='"+picInfo+"' alt='aaa'></a></div><div class='media-body'><h4 class='media-heading'>"+title+"</h4>"+digest+"</div></li>");
+				    		    	list.stop().fadeIn(800);
 				    		    }
 				    		    		    			
 				    		});
@@ -75,31 +79,40 @@ $(document).ready(function(){
 menu.click(function()
 {
 	
+	// msg 获取点击的栏目
 	var msg=$(this).text();
 	
 	switch (msg){
+		
 		case '财经':
 		    status='money';
 			break;
 		case '娱乐':
-		    status='ent';
+		    status='ent';      
 			break;
 		case '科技':
-		    status='tech';
+		    status='tech';      
 			break;
 		case '军事':
 		    status='war';
 			break;
 		case '运动':
-		    status='sports';
+		    status='sports';      
 			break;
 		case '推荐':
-		    status='dy'
-			break;		
+		    status='dy';      
+			break;
+		case '汽车':
+		    status='auto';      
+			break;
+		case '新闻':
+		    status='toutiao';
+			break;
+		
 	}
 	
-       //删除ul子元素
-       list.empty();
+       list.stop().fadeOut(800);  
+       list.empty();//删除ul子元素  
 	
 	$.ajax({
 		type:"post",
@@ -128,8 +141,9 @@ menu.click(function()
 				    		    }
 				    		    
 				    		    if(title!=null || digest!=null)
-				    		    {
-				    		    	list.append("<li class='media'><div class='media-left'><a href='#'><img class='media-object' src='"+picInfo+"' alt='aaa'></a></div><div class='media-body'><h4 class='media-heading'>"+title+"</h4>"+digest+"</div></li>");				    		        		    		    	
+				    		    {				    		    	
+				    		    	list.append("<li class='media'><div class='media-left'><a href='#'><img class='media-object' src='"+picInfo+"' alt='aaa'></a></div><div class='media-body'><h4 class='media-heading'>"+title+"</h4>"+digest+"</div></li>");
+				    		    	list.stop().fadeIn(800);
 				    		    }
 				    		    		    			
 				    		});
@@ -152,4 +166,12 @@ menu.click(function()
 	
 	
 	
+});
+//置顶按钮
+menu.click(function()
+{
+	if($(this).text() == '置顶')
+	{	    
+	    $("html,body").stop().animate({scrollTop:0}, 1000);	    
+	}	
 });

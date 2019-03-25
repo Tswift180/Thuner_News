@@ -17,12 +17,11 @@
     <![endif]-->
   </head>
   <body id="body">
-                  
-	    
-          	        	
+                    	
          
       <div class="container-fluid">
       	
+	      	<!--导航栏开始-->
 	      	<div class="row">
 	      	    
 	      	    <nav class="navbar navbar-default navbar-fixed-top col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -37,29 +36,38 @@
 								      </a>										     
 																								      	               
 									</div>
+									
+                  <div class="navbar-btn">
+                      
+                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="img/index/menu_61.784615384615px_1195227_easyicon.net.png"/></a>
+                              	
+                  </div>
+                      
 									    						  								  				        
 	            </nav>
 	      			      		
 	      	</div>
 	      	
+	      	<!--主要内容开始-->
 	      	<div class="row" id="main_page">
-	      		
+	      	  <!--左侧栏目开始-->
 	      	    <div class="list-group col-xs-3 col-sm-3 col-md-3 col-lg-3" >								  
 								  
 								  <a href="#" class="list-group-item">推荐</a>
+								  <a href="#" class="list-group-item">新闻</a>
 								  <a href="#" class="list-group-item">娱乐</a>
 								  <a href="#" class="list-group-item">科技</a>
 								  <a href="#" class="list-group-item">军事</a>
 								  <a href="#" class="list-group-item">运动</a>
 								  <a href="#" class="list-group-item">财经</a>
+								  <a href="#" class="list-group-item">汽车</a>
+								  <a href="#" class="list-group-item glyphicon glyphicon-chevron-up"></a>
 								  
               </div>
-              
+            <!--右侧内容开始-->  
               <div class="newslist col-xs-9 col-sm-9 col-md-9 col-lg-9">
                   
                   <ul class="media-list">
-                  	
-                  	
                   	
                   </ul>
 	      	    								  
@@ -67,6 +75,7 @@
       		
 	      	</div>
 	      	
+	      	<!--页脚开始-->
 	      	<div class="row">
 	      	    
 	      	    <footer class="footer modal-footer">
@@ -81,8 +90,76 @@
               </footer>
       	
 	      	</div>
+	      	
+	      	<!--模态板开始-->
+	      	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	      		
+						  <div class="modal-dialog" role="document">
+						  	  <!--模态板主体-->
+							    <div class="modal-content">
+							    	<!--模态板头部-->
+								      <div class="modal-header">
+								      	
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title" id="myModalLabel"><a><img src="img/index/User_81px_1130730_easyicon.net.png"/></a>作者信息</h4>
+								        
+								        
+								      </div>
+								      <!--模态板主要内容-->
+								      <div class="modal-body userdata">
+								          
+								          <div id="page_header">
+								              
+								              <p><img src="img/index/user_72px_1201412_easyicon.net.png" /></p>
+							          	    <p><h2>赖景熔</h2></p>
+							          	    <p><h5 style="color: #337AB7;">web前端工程师</h5></p>
+							          	    <p><h5><b>"目前仍在求职中，期望全职实习/全职......"</b></h5></p>
+								          									          	
+								          </div>
+							          									          								          
+								          <hr />
+								          
+								          <h3>个人简介</h3>
+								          <ul id="first_ul">
+								          									          	
+								          	<li><b>年龄：21岁&nbsp;/&nbsp;男</b></li>
+								          	<li><b>生日：1998-02-07</b></li>
+								          	<li><b>电话：13242662406</b></li>
+								          	<li><a href=mailto:719970431@qq.com><b>Email：719970431@qq.com</b></a></li>
+								          	
+								          </ul>
+								          
+								          <hr />
+								          
+								          <h3>知识栈</h3>
+								          <ul id="second_ul">
+								          	
+								          	<li><b>1.Java语言</b></li>
+								          	<li><b>2.HTML+CSS+JavaScript前端编程</b></li>
+								          	<li><b>3.Ajax异步技术</b></li>
+								          	<li><b>4.JQuery库</b></li>
+								          	<li><b>5.Bootstarp框架</b></li>
+								          	<li><b>6.MySQL操作</b></li>
+								          	<li><b>7.Spring+SpringMVC+Mybatis涉猎</b></li>
+								          
+								          </ul>
+								          							       		          
+								      </div>
+								      <!--模态板页脚-->
+								      <div class="modal-footer">
+								      	
+								        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								        <button type="button" class="btn btn-primary" aria-hidden="true" onclick="window.open('./file/简历赖景熔.pdf')">下载简历</button>
+								        
+								      </div>
+								      
+							    </div>
+							    
+						  </div>
+          </div>
+	      	
       	     	
-      </div>
+         </div>
       
       
 
